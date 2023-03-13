@@ -7,8 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        {% load static %}
     </head>
+    <style type="text/css">
+        h1 {
+            color:green;
+            font-size:50px;
+        }
+        button {
+            border: dotted 2px blue;
+        }
+        button img {
+            height: auto;
+            max-width: 200px;
+        }
+        
+    </style>
     <body>
-        <h1>Download Complete</h1>
+        <center><h1>Download Complete</h1><center>
+        <center><button><a href = "{% url "youtube:home" %}"> <img src= "{% static 'youtubeapp/back.png' %}"></button></center>
    </body>
 </html>

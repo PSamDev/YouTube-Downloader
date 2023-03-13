@@ -7,5 +7,4 @@ urlpatterns = [
     path("", views.index, name="home"),
     path("download/", views.download, name="download"),
     path("download/<resolution>", views.yt_download_complete, name="complete"),
-    
 ]
